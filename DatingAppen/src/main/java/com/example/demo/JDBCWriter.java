@@ -15,7 +15,7 @@ public class JDBCWriter {
 
         try {
             //Attempt to establish connection, pass user details
-            connection = DriverManager.getConnection(url, "maxmeldal", "bzm35htw");
+            connection = DriverManager.getConnection(url, "GlobalAdmin ", "[H6F5725u*Dk’}8a");
             gotCon = true;
         } catch (SQLException throwables) {
             System.out.println("Connection failed = " + throwables.getMessage());
