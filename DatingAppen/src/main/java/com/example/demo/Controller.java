@@ -9,7 +9,7 @@ public class Controller {
 
     @GetMapping
     public String welcome(Model model){
-        model.addAttribute("Gonnect", jdbcWriter.setConnection());
+        model.addAttribute("Connect", jdbcWriter.setConnection());
         return ("welcome");
     }
 
