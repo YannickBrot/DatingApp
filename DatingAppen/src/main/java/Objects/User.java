@@ -30,7 +30,6 @@ public class User {
         this.sexualOrientation = sexualOrientation;
     }
 
-    public class AgeCalculator {
         public  int calculateAge() {
             LocalDate currentDate = LocalDate.now();
             if ((dateOfBirth != null) && (currentDate != null)) {
@@ -39,7 +38,7 @@ public class User {
                 return 0;
             }
         }
-    }
+
 
     public int getId() {
         return id;

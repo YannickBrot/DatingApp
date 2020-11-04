@@ -12,7 +12,7 @@ public class Match {
         ArrayList<User> users = jdbcWriter.getUsers();
         ArrayList<Pet> pets = jdbcWriter.getPets();
         ArrayList<User> matches = new ArrayList<>();
-        )
+
 
         if (pet.getGender().equals("Male") && pet.getSexualOrientation().equals("Hetero")){
             for (Pet p : pets) {
