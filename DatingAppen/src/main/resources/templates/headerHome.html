@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        nav{
+
+            text-align: center;
+        }
+
+
+        ul li{
+            display: inline-block; padding:10px;
+            font-size:30px;
+            margin-right: 100px;
+            margin-top: 10px;
+        }
+        €
+        img{
+            float: left;
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+<div th:fragment="header">
+    <div class="container">
+        <div class="logo">
+            <a href="/home"><img src="images/blackfriday.jpg" style="width:150px;height:50px;"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/administrator" >Administrator</a></li>
+                <li><a href="/bruger">Bruger</a></li>
+            </ul>
+        </nav>
+    </div>
+    <hr />
+</div>
+</body>

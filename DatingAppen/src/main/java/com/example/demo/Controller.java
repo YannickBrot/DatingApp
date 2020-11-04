@@ -1,6 +1,5 @@
 package com.example.demo;
 
-import com.example.demo.JDBCWriter;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.ui.Model;
 
@@ -19,4 +18,25 @@ public class Controller {
         return ("home");
     }
 
+
+    @GetMapping ("/administrator")
+    public String administrator(){ return ("administrator"); }
+
+    @GetMapping ("/bruger")
+    public String bruger(){ return ("bruger"); }
+
+    //bruger
+
+    @GetMapping ("/findBrugere")
+    public String findBrugere(){ return ("findBrugere"); }
+
+    @GetMapping ("/kandidatListe")
+    public String kandidatListe(){ return ("kandidatListe"); }
+
+    @GetMapping ("/beskeder")
+    public String beskeder(){ return ("beskeder"); }
+
+    @GetMapping ("/profil")
+    public String profil(){ return ("profil"); }
 }
+
