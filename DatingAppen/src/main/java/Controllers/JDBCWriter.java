@@ -1,6 +1,10 @@
-package com.example.demo;
+package Controllers;
+
+import Objects.Pet;
+import Objects.User;
 
 import java.sql.*;
+import java.util.ArrayList;
 
 public class JDBCWriter {
 
@@ -23,5 +27,13 @@ public class JDBCWriter {
 
         //return result of connection
         return gotCon;
+    }
+
+    public ArrayList<User> getUsers() {
+        return null;
+    }
+
+    public ArrayList<Pet> getPets() {
+        return null;
     }
 }

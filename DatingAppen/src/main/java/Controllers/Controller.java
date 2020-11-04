@@ -1,15 +1,15 @@
-package com.example.demo;
+package Controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.ui.Model;
 
 @org.springframework.stereotype.Controller
 public class Controller {
-    com.example.demo.JDBCWriter jdbcWriter = new JDBCWriter();
+    JDBCWriter jdbcWriter = new JDBCWriter();
 
     @GetMapping
     public String welcome(Model model){
-        model.addAttribute("Gonnect", jdbcWriter.setConnection());
+        model.addAttribute("Connect", jdbcWriter.setConnection());
         return ("welcome");
     }
 
