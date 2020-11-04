@@ -1,6 +1,7 @@
 package Objects;
 
 import java.time.LocalDate;
+import java.time.Period;
 
 public class User {
     private int id;
@@ -27,5 +28,17 @@ public class User {
         this.username = username;
         this.gender = gender;
         this.sexualOrientation = sexualOrientation;
+    }
+
+
+    public class AgeCalculator {
+        public  int calculateAge() {
+            LocalDate currentDate = LocalDate.now();
+            if ((dateOfBirth != null) && (currentDate != null)) {
+                return Period.between(dateOfBirth, currentDate).getYears();
+            } else {
+                return 0;
+            }
+        }
     }
 }
