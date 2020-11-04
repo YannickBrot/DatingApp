@@ -22,21 +22,28 @@ public class Controller {
     @GetMapping ("/administrator")
     public String administrator(){ return ("administrator"); }
 
-    @GetMapping ("/bruger")
-    public String bruger(){ return ("bruger"); }
+    @GetMapping ("/user")
+    public String user(){ return ("user"); }
 
     //bruger
 
-    @GetMapping ("/findBrugere")
-    public String findBrugere(){ return ("findBrugere"); }
+    @GetMapping ("/findUsers")
+    public String findUsers(){ return ("findUsers"); }
 
-    @GetMapping ("/kandidatListe")
-    public String kandidatListe(){ return ("kandidatListe"); }
+    @GetMapping ("/candidateList")
+    public String candidateList(){ return ("candidateList"); }
 
-    @GetMapping ("/beskeder")
-    public String beskeder(){ return ("beskeder"); }
+    @GetMapping ("/messages")
+    public String messages(){ return ("messages"); }
 
-    @GetMapping ("/profil")
-    public String profil(){ return ("profil"); }
+    @GetMapping ("/profile")
+    public String profile(){ return ("profile"); }
+
+    //footer
+
+    @GetMapping ("/privacyPolicy")
+    public String privacyPolicy(){ return ("privacyPolicy"); }
+
+
 }
 
